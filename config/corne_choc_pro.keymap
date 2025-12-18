@@ -57,6 +57,96 @@
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <37 36>;
         };
+
+        pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <25 37>;
+        };
+
+        and {
+            bindings = <&kp AMPS>;
+            key-positions = <11 25>;
+        };
+
+        asteriks {
+            bindings = <&kp ASTRK>;
+            key-positions = <10 24>;
+        };
+
+        divide {
+            bindings = <&kp SLASH>;
+            key-positions = <24 36>;
+        };
+
+        plus {
+            bindings = <&kp PLUS>;
+            key-positions = <9 23>;
+        };
+
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <23 35>;
+        };
+
+        carret {
+            bindings = <&kp CARET>;
+            key-positions = <8 22>;
+        };
+
+        under {
+            bindings = <&kp UNDER>;
+            key-positions = <22 34>;
+        };
+
+        percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <5 19>;
+        };
+
+        tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <19 33>;
+        };
+
+        dollar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <4 18>;
+        };
+
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <18 32>;
+        };
+
+        hash {
+            bindings = <&kp HASH>;
+            key-positions = <17 3>;
+        };
+
+        backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <17 31>;
+        };
+
+        at {
+            bindings = <&kp AT>;
+            key-positions = <2 16>;
+        };
+
+        grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <16 30>;
+        };
+
+        copy {
+            bindings = <&kp LG(C)>;
+            key-positions = <30 31>;
+        };
+
+        paste {
+            bindings = <&kp LG(V)>;
+            key-positions = <31 32>;
+        };
     };
 
     behaviors {
@@ -104,8 +194,8 @@
             bindings = <
 &kp ESC   &kp Q                &kp W            &kp E        &kp R              &kp T        &trans  &trans  &kp Y      &kp U               &kp I             &kp O             &kp P                    &kp MINUS
 &kp CAPS  &hml LEFT_CONTROL A  &hml LEFT_ALT S  &hml LGUI D  &hml LEFT_SHIFT F  &kp G        &trans  &trans  &kp H      &hmr RIGHT_SHIFT J  &hmr RIGHT_GUI K  &hmr RIGHT_ALT L  &hmr RIGHT_CONTROL SEMI  &kp SQT
-&kp TAB   &kp Z                &kp X            &kp C        &kp V              &lt 4 B                      &kp N      &kp M               &kp COMMA         &kp DOT           &kp FSLH                 &kp EQUAL
-                                                &mo 2        &lt 1 ENTER        &lt 3 SPACE                  &kp SPACE  &kp BACKSPACE       &mo 2
+&kp TAB   &kp Z                &kp X            &kp C        &kp V              &lt 3 B                      &kp N      &kp M               &kp COMMA         &kp DOT           &kp FSLH                 &kp EQUAL
+                                                &trans       &lt 1 ENTER        &lt 2 SPACE                  &kp SPACE  &kp BACKSPACE       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
@@ -125,23 +215,6 @@
 &trans        &trans        &trans  &trans      &trans           &trans      &trans  &trans  &kp MINUS  &kp N4  &kp N5  &kp N6  &kp SLASH  &trans
 &trans        &bt BT_CLR    &trans  &sys_reset  &bootloader      &trans                      &trans     &kp N1  &kp N2  &kp N3  &kp ASTRK  &trans
                                     &trans      &trans           &trans                      &trans     &trans  &trans
-            >;
-        };
-
-        symbols {
-            display-name = "SYM";
-
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  | LCTRL | RCTRL |  ^  |  &  |  *  |  (  |  )  | BSPC |
-            // | CTRL |     |     |     |     |     |  LALT | RALT  |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |               |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |               | ENT |     | ALT |
-
-            bindings = <
-&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &trans  &trans  &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp MINUS
-&trans  &trans    &trans  &trans    &trans    &trans     &trans  &trans  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &trans    &trans  &trans    &trans    &trans                     &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                          &trans    &trans    &trans                     &trans     &trans     &trans
             >;
         };
 
