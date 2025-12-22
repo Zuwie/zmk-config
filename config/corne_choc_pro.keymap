@@ -152,6 +152,11 @@
             bindings = <&kp EXCL>;
             key-positions = <16 17>;
         };
+
+        questionmark {
+            bindings = <&kp QUESTION>;
+            key-positions = <17 18>;
+        };
     };
 
     behaviors {
