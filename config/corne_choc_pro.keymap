@@ -135,7 +135,7 @@
 
         equal {
             bindings = <&kp EQUAL>;
-            key-positions = <17 18>;
+            key-positions = <18 32>;
         };
 
         hash {
