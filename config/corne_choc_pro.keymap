@@ -62,37 +62,49 @@
             bindings = <&kp PIPE>;
             key-positions = <25 37>;
             timeout-ms = <30>;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <50>;
         };
 
         and {
             bindings = <&kp AMPS>;
             key-positions = <11 25>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
         };
 
         asteriks {
             bindings = <&kp ASTRK>;
             key-positions = <10 24>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
         };
 
         divide {
             bindings = <&kp SLASH>;
             key-positions = <24 36>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
         };
 
         plus {
             bindings = <&kp PLUS>;
             key-positions = <9 23>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
         };
 
         minus {
             bindings = <&kp MINUS>;
             key-positions = <23 35>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
         };
 
         carret {
             bindings = <&kp CARET>;
             key-positions = <8 22>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
         };
 
         under {
@@ -103,16 +115,22 @@
         percent {
             bindings = <&kp PERCENT>;
             key-positions = <5 19>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
         };
 
         tilde {
             bindings = <&kp TILDE>;
             key-positions = <19 33>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
         };
 
         dollar {
             bindings = <&kp DOLLAR>;
             key-positions = <4 18>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
         };
 
         equal {
@@ -123,21 +141,29 @@
         hash {
             bindings = <&kp HASH>;
             key-positions = <17 3>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
         };
 
         backslash {
             bindings = <&kp BACKSLASH>;
             key-positions = <17 31>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
         };
 
         at {
             bindings = <&kp AT>;
             key-positions = <2 16>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
         };
 
         grave {
             bindings = <&kp GRAVE>;
             key-positions = <16 30>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
         };
 
         copy {
