@@ -39,12 +39,12 @@
         };
 
         left_paren {
-            bindings = <&kp LPAR>;
+            bindings = <&lpar_lt>;
             key-positions = <23 24>;
         };
 
         right_paren {
-            bindings = <&kp RPAR>;
+            bindings = <&rpar_gt>;
             key-positions = <24 25>;
         };
 
@@ -219,6 +219,24 @@
             quick-tap-ms = <175>;
             flavor = "balanced";
             hold-trigger-on-release;
+        };
+
+        lpar_lt: lpar_lt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LPAR_LT";
+            bindings = <&kp LPAR>, <&kp LT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        rpar_gt: rpar_gt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RPAR_GT";
+            bindings = <&kp RPAR>, <&kp GT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
         };
     };
 
