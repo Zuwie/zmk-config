@@ -21,7 +21,7 @@
 
         caps_word {
             bindings = <&caps_word>;
-            key-positions = <19 22>;
+            key-positions = <32 35>;
         };
 
         zoom_in {
