@@ -258,6 +258,14 @@
             quick-release;
         };
 
+        sk_shift: sticky_shift {
+            compatible = "zmk,behavior-sticky-key";
+            #binding-cells = <1>;
+            bindings = <&kp>;
+            release-after-ms = <1000>;
+            quick-release;
+        };
+
         shift_ht: shift_holdtap {
             compatible = "zmk,behavior-hold-tap";
             label = "SHIFT_HOLDTAP";
@@ -265,7 +273,7 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
             flavor = "balanced";
-            bindings = <&kp>, <&sk>;
+            bindings = <&kp>, <&sk_shift>;
         };
 
         shift_td: shift_tapdance {
