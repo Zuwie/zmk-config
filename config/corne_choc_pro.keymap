@@ -298,10 +298,10 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC   &kp Q                &kp W            &kp E            &kp R              &kp T        &trans  &trans  &kp Y      &kp U               &kp I                 &kp O               &kp P                     &kp MINUS
-&kp CAPS  &kp A                &kp S            &kp D            &kp F              &kp G        &trans  &trans  &kp H      &kp J               &kp K                 &kp L               &kp SEMI                  &kp SQT
-&kp TAB   &hml LEFT_CONTROL Z  &hml LEFT_ALT X  &hml LEFT_GUI C  &hml LEFT_SHIFT V  &lt 3 B                      &kp N      &hmr RIGHT_SHIFT M  &hmr RIGHT_GUI COMMA  &hmr RIGHT_ALT DOT  &hmr RIGHT_CONTROL SLASH  &kp GRAVE
-                                                &shift_td        &lt 1 ENTER        &lt 2 SPACE                  &kp SPACE  &kp BACKSPACE       &shift_td
+&kp ESC              &kp Q                &kp W            &kp E            &kp R              &kp T        &trans  &trans  &kp Y      &kp U               &kp I                 &kp O               &kp P                     &kp MINUS
+&hml LC(B) CAPSLOCK  &kp A                &kp S            &kp D            &kp F              &kp G        &trans  &trans  &kp H      &kp J               &kp K                 &kp L               &kp SEMI                  &kp SQT
+&kp TAB              &hml LEFT_CONTROL Z  &hml LEFT_ALT X  &hml LEFT_GUI C  &hml LEFT_SHIFT V  &lt 3 B                      &kp N      &hmr RIGHT_SHIFT M  &hmr RIGHT_GUI COMMA  &hmr RIGHT_ALT DOT  &hmr RIGHT_CONTROL SLASH  &kp GRAVE
+                                                           &shift_td        &lt 1 ENTER        &lt 2 SPACE                  &kp SPACE  &kp BACKSPACE       &shift_td
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
@@ -351,36 +351,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans          &mkp LCLK       &mkp MCLK       &mkp RCLK        &trans           &trans
                         &trans  &trans  &trans                  &msc SCRL_UP    &msc SCRL_DOWN  &trans
-            >;
-        };
-
-        extra_layer_4 {
-            display-name = "EXTRA 4";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
-            >;
-        };
-
-        extra_layer_5 {
-            display-name = "EXTRA 5";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
-            >;
-        };
-
-        extra_layer_6 {
-            display-name = "EXTRA 6";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
             >;
         };
     };
